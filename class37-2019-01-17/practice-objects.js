@@ -35,6 +35,7 @@ let newState = {
   },
 };
 
+
 console.log('people: ', people);
 console.log('stuff:', stuff);
 console.log('state:', state);
