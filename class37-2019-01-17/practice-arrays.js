@@ -42,14 +42,6 @@ let incrementFunction = intInput => {
 // Running the below should log an array of ints 2-11
 // console.log(map(arrayOfTen, incrementFunction));
 
-let checkEvenFunction = intInput => {
-  if ((intInput % 2) == 0 ){
-    return true;
-  } else {
-    return false;
-  }
-};
-
 // The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 const filter = (inputArray, inputFunction) => {
   let returnArray = [];
@@ -59,6 +51,14 @@ const filter = (inputArray, inputFunction) => {
     }
   }
   return returnArray;
+};
+
+let checkEvenFunction = intInput => {
+  if ((intInput % 2) == 0 ){
+    return true;
+  } else {
+    return false;
+  }
 };
 
 // Running the below should log an array of even ints 2-10
