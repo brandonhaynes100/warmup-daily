@@ -16,8 +16,37 @@ const stuff = {
   cars: ['Toyota','Mazda'],
 };
 
-let state = {};
+let state = {
+  people: people,
+  stuff: stuff,
+};
 
-let newPeople = [];
-const newStuff = {};
-let newState = {};
+let newPeople = ['Odie', ...people, 'Garfield'];
+
+const newStuff = {
+  ...stuff,
+  cars: [...stuff.cars, 'Honda'],
+};
+
+let newState = {
+  people: [
+    'Odie', 
+    ...people, 
+    'Garfield'],
+  stuff: {
+    ...stuff,
+    cars: [
+      ...stuff.cars, 
+      'Honda'],
+  },
+};
+
+console.log(people);
+
+console.log(stuff);
+
+console.log(state);
+
+console.log(newPeople);
+
+console.log(newState);
